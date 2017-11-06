@@ -14,36 +14,10 @@ module.exports.hello = (event, context, callback) => {
   // Use this code if you don't use the http event with the LAMBDA-PROXY integration
   // callback(null, { message: 'Go Serverless v1.0! Your function executed successfully!', event });
 };
-<<<<<<< HEAD
+const AWS = require('aws-sdk');
+const s3 = new AWS.S3();
+const params = { Bucket: 'photo-bucket-tmp-prjct'};
 
-  const AWS = require('aws-sdk');
-  const s3 = new AWS.S3();
-  const params = { Bucket: 'photo-bucket-tmp-prjct'};
-/*module.exports.photos= (event, context, callback) => {
-  var keys = [];
-  s3.listObjects(params, function(err, data) {
-    if (err){
-      console.log(err, err.stack);
-    }
-    else{
-      data.Contents.map(pic=>{
-        keys.push(pic.Key);
-      })
-      const response = {
-        statusCode: 200,
-        headers: {
-          Access-Control-Allow-Origin: *,
-          Access-Control-Allow-Credentials: true
-         },
-        body: {
-        message: keys,
-      },
-    };
-  callback(null, response);
-    }
-  });
-};
-*/
 module.exports.photos= (event, context, callback) => {
   s3.listObjects(params, function(err, data) {
     if (err){
@@ -63,3 +37,4 @@ module.exports.photos= (event, context, callback) => {
   callback(null, response);
     }
   });
+};

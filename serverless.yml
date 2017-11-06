@@ -11,11 +11,7 @@
 #
 # Happy Coding!
 
-<<<<<<< HEAD
 service: aws-nodejs-ian-photobucket # NOTE: update this with your service name
-=======
-service: aws-nodejs # NOTE: update this with your service name
->>>>>>> abb6b6f9becd00ae3bccaa2efdf91b1065db5d01
 
 # You can pin your service to only deploy with a specific Serverless version
 # Check out our docs for more details
@@ -62,7 +58,6 @@ provider:
 functions:
   hello:
     handler: handler.hello
-<<<<<<< HEAD
   photos:
     handler: handler.photos
     events:
@@ -79,25 +74,6 @@ functions:
               - X-Amz-Security-Token
               - X-Amz-User-Agent
             allowCredentials: false  
-=======
-  getPictures:
-    handler: handler.getPictures
-
-
-- http:
-    path: photos
-    method: get
-    cors:
-      origin: '*'
-      headers:
-        - Content-Type
-        - X-Amz-Date
-        - Authorization
-        - X-Api-Key
-        - X-Amz-Security-Token
-        - X-Amz-User-Agent
-      allowCredentials: false
->>>>>>> abb6b6f9becd00ae3bccaa2efdf91b1065db5d01
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details

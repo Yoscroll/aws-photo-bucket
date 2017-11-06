@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 npm init
 	aws-sdk
 
@@ -6,12 +6,3 @@ npm init
 
 serverless deploy
 aws configure
-=======
-npm init
-	aws-sdk
-
-
-
-serverless deploy
-aws configure
->>>>>>> abb6b6f9becd00ae3bccaa2efdf91b1065db5d01
