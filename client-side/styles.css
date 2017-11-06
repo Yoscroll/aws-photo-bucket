@@ -1,6 +1,8 @@
 .image {
 	text-align: center;
-
+	background-color: white;
+	padding: 5px;
+	margin: 2px;
 }
 img {
 	display: block;
@@ -13,4 +15,8 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	align-items: center;
+}
+html{
+	background-color: black;
 }
