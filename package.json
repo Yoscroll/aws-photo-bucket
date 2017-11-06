@@ -1,8 +1,15 @@
 {
+<<<<<<< HEAD
   "name": "aws-photo-bucket",
   "version": "1.0.0",
   "description": "[Intermediate] AWS, S3, Api-Gatway, Lambda, Serverless - Intro into AWS cloud services and Serverless",
   "main": "handler.js",
+=======
+  "name": "aws-sdk",
+  "version": "1.0.0",
+  "description": "[Intermediate] AWS, S3, Api-Gatway, Lambda, Serverless - Intro into AWS cloud services and Serverless",
+  "main": "index.js",
+>>>>>>> abb6b6f9becd00ae3bccaa2efdf91b1065db5d01
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,14 +17,21 @@
     "type": "git",
     "url": "git+https://github.com/Yoscroll/aws-photo-bucket.git"
   },
+<<<<<<< HEAD
   "keywords": [],
+=======
+>>>>>>> abb6b6f9becd00ae3bccaa2efdf91b1065db5d01
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Yoscroll/aws-photo-bucket/issues"
   },
+<<<<<<< HEAD
   "homepage": "https://github.com/Yoscroll/aws-photo-bucket#readme",
   "dependencies": {
     "aws-sdk": "^2.142.0"
   }
+=======
+  "homepage": "https://github.com/Yoscroll/aws-photo-bucket#readme"
+>>>>>>> abb6b6f9becd00ae3bccaa2efdf91b1065db5d01
 }
