@@ -56,8 +56,6 @@ provider:
 #    - exclude-me-dir/**
 
 functions:
-  hello:
-    handler: handler.hello
   photos:
     handler: handler.photos
     events:
